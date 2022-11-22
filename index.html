@@ -13,7 +13,7 @@
     <div class="container">
         <div class="logo">
             <a class="logo-img" href="0">
-                <img class="header-logo" src="https://netology-code.github.io/html-2-diploma/sources/images/noemi-logo.svg" alt="Логотип NOEMI">
+                <img class="header-logo" src="https://raw.githubusercontent.com/ElenaV11/mq-56-diplom/efe31879e9aa440299d85a535af94ee045e8d222/svg/noemi-logo.svg" alt="Логотип NOEMI">
             </a>
             <nav class="menu">
                 <ul class="menu-list">
@@ -44,16 +44,63 @@
     </div>
 </header>
 
+<input type="checkbox" id="popup1" class="popup-toggle">
+<div class="popup">
+    <div class="popup-container">
+        <div class="sign-feedback">
+            <h2 class="feedback"> ваш фидбек </h2>
+            <form class="form">
+                <div class="form-group">
+                    <label class="select-group">
+                        <span class="select-label">Как часто вы заходите на сайт?</span>
+                        <select class="select">
+                            <option class="option" value="almost every day" selected>Почти каждый день</option>
+                            <option class="option" value="once every few days">Раз в несколько дней</option>
+                            <option class="option" value="once every few weeks">Раз в несколько недель</option>
+                            <option class="option" value="several times a year">Несколько раз в год</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="form-radio">
+                    <label class="select-radio">
+                        <span class="select-label">Вы подписаны на e-mail рассылку?</span>
+                    </label>
+                    <div class="radio-group-menu">
+                        <label class="radio-group">
+                            <input type="radio" class="radio" name="radio-group">
+                            <span class="radio-text-yes">Да</span>
+                        </label>
+                        <label class="radio-group">
+                            <input type="radio" class="radio" name="radio-group">
+                            <span class="radio-text-no">Нет</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-feedback">
+                    <label class="select-feedback">
+                        <span class="select-label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
+                    </label>
+                    <textarea class="textarea-feedback" placeholder="Может, больше рецептов?"></textarea>
+                </div>
+                <button class="button-message-feedback" type="submit">
+                    <span class="rield-message-feedback">отправить</span>
+                </button>
+            </form>
+        </div>
+        <button class="popup-close" type="button">Закрыть окно</button>
+    </div>
+</div>
+
 <article class="article">
     <h2 class="article-title">сейчас в тренде</h2>
     <div class="trend-block">
         <div class="new-trends card-interior">
             <div class="product-trends">
-                <ul class="menu-teg">
-                    <li class="teg">
+                <ul class="menu-teg-trends">
+                    <li class="teg-trends">
                         <a class="teg-link" href="0">lifestyle</a>
                     </li>
-                    <li class="teg">
+                    <li class="teg-trends">
                         <a class="teg-link" href="0">interior</a>
                     </li>
                 </ul>
@@ -64,8 +111,8 @@
         </div>
         <div class="new-trends card-food">
             <div class="product-trends">
-                <ul class="menu-teg">
-                    <li class="teg">
+                <ul class="menu-teg-trends">
+                    <li class="teg-trends">
                         <a class="teg-link" href="0">food</a>
                     </li>
                 </ul>
@@ -76,11 +123,11 @@
         </div>
         <div class="new-trends card-travel">
             <div class="product-trends">
-                <ul class="menu-teg">
-                    <li class="teg">
+                <ul class="menu-teg-trends">
+                    <li class="teg-trends">
                         <a class="teg-link" href="0">lifestyle</a>
                     </li>
-                    <li class="teg">
+                    <li class="teg-trends">
                         <a class="teg-link" href="0">travel</a>
                     </li>
                 </ul>
@@ -91,11 +138,11 @@
         </div>
         <div class="new-trends card-health">
             <div class="product-trends">
-                <ul class="menu-teg">
-                    <li class="teg">
+                <ul class="menu-teg-trends">
+                    <li class="teg-trends">
                         <a class="teg-link" href="0">food</a>
                     </li>
-                    <li class="teg">
+                    <li class="teg-trends">
                         <a class="teg-link" href="0">health</a>
                     </li>
                 </ul>
@@ -111,7 +158,7 @@
     <main class="main-page">
         <section class="section">
             <a class="img-block" href="0">
-                <img class="img-link" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post1.jpg" alt="человек идет по пляжу">
+                <img class="img-link" src="https://raw.githubusercontent.com/ElenaV11/mq-56-diplom/main/img/last-post1.jpg" alt="человек идет по пляжу">
             </a>
             <div class="main-text">
                 <ul class="menu-teg">
@@ -140,7 +187,7 @@
         </section>
         <section class="section">
             <a class="img-block" href="0">
-                <img class="img-link" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post2.jpg" alt="девушка занимается йогой">
+                <img class="img-link" src="https://raw.githubusercontent.com/ElenaV11/mq-56-diplom/main/img/last-post2.jpg" alt="девушка занимается йогой">
             </a>
             <div class="main-text">
                 <ul class="menu-teg">
@@ -169,7 +216,7 @@
         </section>
         <section class="section">
             <a class="img-block" href="0">
-                <img class="img-link" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post3.jpg" alt="девушка на фестивале">
+                <img class="img-link" src="https://raw.githubusercontent.com/ElenaV11/mq-56-diplom/main/img/last-post3.jpg" alt="девушка на фестивале">
             </a>
             <div class="main-text">
                 <ul class="menu-teg">
@@ -196,7 +243,7 @@
         </section>
         <section class="section">
             <a class="img-block" href="0">
-                <img class="img-link" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post4.jpg" alt="тарелки с едой на столе">
+                <img class="img-link" src="https://raw.githubusercontent.com/ElenaV11/mq-56-diplom/main/img/last-post4.jpg" alt="тарелки с едой на столе">
             </a>
             <div class="main-text">
                 <ul class="menu-teg">
@@ -225,7 +272,7 @@
         </section>
         <section class="section">
             <a class="img-block" href="0">
-                <img class="img-link" src="https://netology-code.github.io/html-2-diploma/sources/images/last-post5.jpg" alt="подушка с надписью">
+                <img class="img-link" src="https://raw.githubusercontent.com/ElenaV11/mq-56-diplom/main/img/last-post5.jpg" alt="подушка с надписью">
             </a>
             <div class="main-text">
                 <ul class="menu-teg">
@@ -264,7 +311,7 @@
                 <div class="sidebar-news-posts">
                     <div class="post-img">
                         <a class="post-pictures" href="0">
-                            <img class="pictures-link" src="https://netology-code.github.io/html-2-diploma/sources/images/2.jpg" alt="человек идет по пляжу">
+                            <img class="pictures-link" src="https://raw.githubusercontent.com/ElenaV11/mq-56-diplom/main/img/2.jpg" alt="человек идет по пляжу">
                         </a>
                     </div>
                     <div class="sidebar-item">
@@ -277,7 +324,7 @@
                 <div class="sidebar-news-posts">
                     <div class="post-img">
                         <a class="post-pictures" href="0">
-                            <img class="pictures-link" src="https://netology-code.github.io/html-2-diploma/sources/images/151.jpg" alt="девушка занимается йогой">
+                            <img class="pictures-link" src="https://raw.githubusercontent.com/ElenaV11/mq-56-diplom/main/img/151.jpg" alt="девушка занимается йогой">
                         </a>
                     </div>
                     <div class="sidebar-item">
@@ -290,7 +337,7 @@
                 <div class="sidebar-news-posts">
                     <div class="post-img">
                         <a class="post-pictures" href="0">
-                            <img class="pictures-link" src="https://netology-code.github.io/html-2-diploma/sources/images/45.jpg" alt="красивый интерьер">
+                            <img class="pictures-link" src="https://raw.githubusercontent.com/ElenaV11/mq-56-diplom/main/img/45.jpg" alt="красивый интерьер">
                         </a>
                     </div>
                     <div class="sidebar-item">
@@ -303,7 +350,7 @@
                 <div class="sidebar-news-posts">
                     <div class="post-img">
                         <a class="post-pictures" href="0">
-                            <img class="pictures-link" src="https://netology-code.github.io/html-2-diploma/sources/images/501.jpg" alt="тарелки с едой на столе">
+                            <img class="pictures-link" src="https://raw.githubusercontent.com/ElenaV11/mq-56-diplom/main/img/501.jpg" alt="тарелки с едой на столе">
                         </a>
                     </div>
                     <div class="sidebar-item">
@@ -316,7 +363,7 @@
                 <div class="sidebar-news-posts">
                     <div class="post-img">
                         <a class="post-pictures" href="0">
-                            <img class="pictures-link" src="https://netology-code.github.io/html-2-diploma/sources/images/7.jpg" alt="три девушки с длинными распущенными волосами">
+                            <img class="pictures-link" src="https://raw.githubusercontent.com/ElenaV11/mq-56-diplom/main/img/7.jpg" alt="три девушки с длинными распущенными волосами">
                         </a>
                     </div>
                     <div class="sidebar-item">
@@ -532,3 +579,4 @@
 </footer>
 </body>
 </html>
+
