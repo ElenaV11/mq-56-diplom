@@ -96,7 +96,9 @@ body {
     color: #ffffff;
     text-align: center;
 }
-
+.popup-toggle {
+    display: none;
+}
 .popup {
     width: 100%;
     height: 100%;
@@ -302,6 +304,7 @@ body {
     width: 25%;
     height: 320px;
     display: flex;
+    box-sizing: border-box;
 }
 .new-trends:nth-child(n + 2) {
     margin-left: 5px;
@@ -387,6 +390,7 @@ body {
     z-index: -1;
 }
 .product-trends {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     aling-items: flex-end;
@@ -979,4 +983,20 @@ body {
     list-style-type: none;
     text-decoration: none;
     text-align: center;
+}
+@media (min-width: 641px) and (max-width: 1200px) {
+    .new-trends {
+        width: 50%;
+        height: 250px;
+    }
+    .sidebar {
+        margin-left: 35px;
+    }
+    .product {
+        width: 50%;
+        height: 460px;
+    }
+    .menu {
+        display: none;
+    }
 }
