@@ -984,19 +984,302 @@ body {
     text-decoration: none;
     text-align: center;
 }
+
 @media (min-width: 641px) and (max-width: 1200px) {
-    .new-trends {
-        width: 50%;
-        height: 250px;
+    .header {
+        background-image: url("https://raw.githubusercontent.com/ElenaV11/mq-56-diplom/main/img/banner-bg-tablet.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-color: #000000;
+        box-sizing: border-box;
+        position: relative;
+        z-index: 0;
+        padding-top: 25px;
+        padding-bottom: 120px;
     }
-    .sidebar {
-        margin-left: 35px;
+    .header::after {
+        content: " ";
+        top: 0px;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+        position: absolute;
+        background-color: #000000;
+        opacity: 0.6;
+        z-index: -1;
     }
-    .product {
-        width: 50%;
-        height: 460px;
+    .logo {
+        padding-left: 35px;
+        padding-right: 45px;
+    }
+    .blog {
+        display: block;
+        width: 600px;
+        align-items: center;
+        box-sizing: border-box;
+        margin: 0 auto;
+        margin-top: 95px;
+    }
+    .blog-text {
+        font-family: Open Sans, Arial, sans serif;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.6;
+        text-transform: uppercase;
+        color: #ffffff;
+        text-align: center;
     }
     .menu {
         display: none;
+    }
+    .trend-block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .new-trends {
+        width: 49%;
+        height: 250px;
+        margin: 0 auto;
+    }
+    .new-trends:nth-child(n + 3) {
+        margin-top: 5px;
+    }
+    .page {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+    .main-page {
+        max-width: 395px;
+        margin-top: 50px;
+    }
+    .section {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        border-bottom-style: solid;
+        border-bottom-width: 100%;
+        border-bottom-height: 1px;
+        border-bottom-color: #eeeeee;
+    }
+    .main-text {
+        margin-top: 15px;
+    }
+    .menu-teg {
+        margin-left: 0;
+        list-style-type: none;
+    }
+    .news-menu-title {
+        margin: 15px 0 0 0;
+    }
+    .img-link {
+        margin-bottom: 5px;
+    }
+    .sidebar {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .product {
+        width: 44%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .product:nth-child(n + 3) {
+        margin-top: 30px;
+    }
+    .product:nth-child(even) {
+        margin-left: 22px;
+    }
+    .footer-address {
+        max-width: 1200px;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+}
+@media (min-width: 641px) and (max-width: 1200px) and (orientation: landscape) {
+    .trend-block {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .new-trends {
+        width: 25%;
+        height: 250px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 640px) {
+    .header {
+        background-image: url("https://raw.githubusercontent.com/ElenaV11/mq-56-diplom/main/img/banner-mobile.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-color: #000000;
+        box-sizing: border-box;
+        position: relative;
+        z-index: 0;
+    }
+    .header::after {
+        content: " ";
+        top: 0px;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+        position: absolute;
+        background-color: #000000;
+        opacity: 0.6;
+        z-index: -1;
+    }
+    .container {
+        margin-top: 200px;
+        margin-bottom: 200px;
+    }
+    .logo {
+        width: 360px;
+    }
+    .logo-img {
+        display: block;
+        margin: auto;
+    }
+    .header-logo {
+        width: 290px;
+        height: 70px;
+        margin-bottom: 40px;
+    }
+    .menu {
+        display: none;
+    }
+    .blog {
+        margin: auto;
+        width: 290px;
+    }
+    .blog-text {
+        font-size: 36px;
+    }
+    .trend-block {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .new-trends {
+        width: 95%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .new-trends:nth-child(n + 2) {
+        margin-top: 5px;
+    }
+    .page {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-top: 40px;
+        border-bottom-style: solid;
+        border-bottom-width: 100%;
+        border-bottom-height: 1px;
+        border-bottom-color: #eeeeee;
+    }
+    .main-text {
+        margin-top: 15px;
+    }
+    .menu-teg {
+        margin-left: 0;
+        list-style-type: none;
+    }
+    .news-menu-title {
+        margin: 15px 0 0 0;
+    }
+    .img-link {
+        margin: auto;
+    }
+    .sidebar {
+        margin: 40px auto 0px auto;
+        width: 100%;
+    }
+    .products {
+        display: flex;
+        flex-direction: column;
+    }
+    .product {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .product:nth-child(n + 2) {
+        margin-top: 25px;
+    }
+    .imgbox {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .sidebar-title::after {
+        content: " ";
+        display: block;
+        width: 66px;
+        border-bottom: 3px solid #b59f5b;
+        margin-top: 13px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .news-message::after {
+        content: " ";
+        display: block;
+        width: 66px;
+        border-bottom: 3px solid #b59f5b;
+        margin-top: 13px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .sidebar-tegs::after {
+        content: " ";
+        display: block;
+        width: 66px;
+        border-bottom: 3px solid #b59f5b;
+        margin-top: 13px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .sidebar-theme::after {
+        content: " ";
+        display: block;
+        width: 66px;
+        border-bottom: 3px solid #b59f5b;
+        margin-top: 13px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .input-field {
+        width: 100%;
+    }
+    .menu-list-tegs {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .footer-address {
+        max-width: 100%;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+@media (max-width: 640px) and (orientation: landscape) {
+    .trend-block {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .new-trends {
+        width: 47%;
     }
 }
