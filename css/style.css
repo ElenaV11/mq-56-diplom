@@ -662,6 +662,7 @@ body {
     height: 48px;
     border: inherit;
     outline: inherit;
+    flex-grow: 1;
 }
 .search-button:hover {
     background-color: #323232;
@@ -837,8 +838,9 @@ body {
 }
 .products {
     display: flex;
-    margin: 30px auto 0 auto;
+    margin: auto;
     max-width: 1200px;
+    padding-left: 50px;
 }
 .product {
     width: 30%;
@@ -846,13 +848,12 @@ body {
     flex-direction: column;
 }
 .product:nth-child(n + 2) {
-    margin-left: 55px;
+    margin-left: 40px;
 }
-.product-img {
-    padding-left: 27px;
-}
+
 .product-body {
     margin-top: -35px;
+    margin-left: -15px;
     padding: 50px 20px 30px 20px;
     outline: 3px solid #b59f5b;
     display: flex;
@@ -1066,6 +1067,9 @@ body {
     .main-text {
         margin-top: 15px;
     }
+    .search-button {
+        flex-grow: 1;
+    }
     .menu-teg {
         margin-left: 0;
         list-style-type: none;
@@ -1193,6 +1197,9 @@ body {
     .main-text {
         margin-top: 15px;
     }
+    .search-button {
+        flex-grow: 1;
+    }
     .menu-teg {
         margin-left: 0;
         list-style-type: none;
@@ -1276,10 +1283,9 @@ body {
 @media (max-width: 640px) and (orientation: landscape) {
     .trend-block {
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
     }
     .new-trends {
-        width: 47%;
+        width: 43%;
+        margin: 0 auto;
     }
-}
